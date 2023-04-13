@@ -1,0 +1,33 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : sim ou não + aritmética
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 13/04/2023
+Var
+   // Seção de Declarações das variáveis
+   nota: real
+   media: real
+   contador: inteiro
+   resposta : caracter
+   soma:real
+   quantidade: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   repita
+
+      escreval("escreva uma nota")
+      leia (nota)
+
+      escreval ("deseja escrever outra nota ?  (sim ou não)")
+      leia ( resposta )
+
+      soma <- soma + nota
+      quantidade <- quantidade + 1
+   ate (resposta = "não") ou (resposta = "n")
+
+   media <- soma / quantidade
+   escreval ( " a média é:", media)
+
+Fimalgoritmo
